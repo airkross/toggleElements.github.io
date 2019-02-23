@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="main-window">
+      <ul class="list" id="list">
+        <li class="item">Пункт задания</li>
+        <li class="item">Пункт задания</li>
+      </ul>
+    </div>
+    <button class="main-btn_add btn" onclick="addItem()">
+      Добавить элемент
+    </button>
+    <button class="main-btn_delete btn" onclick="deleteItem()">
+      Удалить лишний
+    </button>
+  </main>
+
+  <div class="container-popup">
+    <div class="popup">
+      <div class="popup-header">
+        <span onclick="closePopup()">&times</span>
+      </div>
+      <div class="popup-body">
+        <h1>Задания закончились!</h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
